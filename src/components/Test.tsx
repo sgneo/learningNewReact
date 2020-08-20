@@ -111,8 +111,10 @@ function Test() {
 
     return (
         <div>
-            First Name: <input type="text" value={fName} onChange={(e:ChangeEvent<HTMLInputElement>) => setFname(e.target.value)}/>
-            Last Name: <input type="text" value={lName} onChange={(e:ChangeEvent<HTMLInputElement>) => setLFname(e.target.value)}/>
+            First Name:
+            <input type="text" value={fName} onChange={(e:ChangeEvent<HTMLInputElement>) => setFname(e.target.value)}/>
+            Last Name: <
+            input type="text" value={lName} onChange={(e:ChangeEvent<HTMLInputElement>) => setLFname(e.target.value)}/>
             {/*USE EFFECT*/}
             <p>
                 numFnameChanges: {testEffect}

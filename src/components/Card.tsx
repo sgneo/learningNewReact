@@ -2,8 +2,8 @@ import React from "react";
 
 
 export interface ICardItem {
-    title: string,
-    imagePath: string,
+    title: string | null,
+    imagePath: string | null,
     description?: string
 }
 
@@ -23,7 +23,7 @@ function Card(props : ICardItem) {
                     height: "100%",
                     objectFit: "cover",
             }}
-                src={imagePath}
+                src={imagePath || ""}
                 alt=""
             />
 

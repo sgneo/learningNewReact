@@ -1,17 +1,17 @@
 import React from "react";
 import Card, {ICardItem} from "../components/Card";
-import {IItem} from "./ItemsList";
+import {IPet} from "./PetsList";
 
 
-function Item({
-    item
+function Pet({
+    pet
 } : {
-    item: IItem
+    pet: IPet
 }) {
     const cardItem: ICardItem = {
-        title: item.name,
-        imagePath: item.imagePath,
-        description: item.description
+        title: pet.name,
+        imagePath: pet.imagePath,
+        description: pet.description
     }
 
     return (
@@ -23,4 +23,4 @@ function Item({
     )
 }
 
-export default Item
+export default Pet
